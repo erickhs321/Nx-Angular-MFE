@@ -1,0 +1,22 @@
+<div class="flex align-items-center flex-column ">
+<p-card class="mt-8 w-23rem">
+  <form class="w-full p-fluid " (ngSubmit)="login()">
+    <div class="p-field">
+      <label class="mb-2"> Username: </label>
+      <input type="text" name="username" pInputText [(ngModel)]="username" />
+    </div>
+    <div class="p-field mt-4">
+      <label class="mb-2"> Password: </label>
+      <p-password
+        name="password"
+        [(ngModel)]="password"
+        [feedback]="false"
+        [toggleMask]="true"
+      >
+      </p-password>
+    </div>
+    <button class="mt-4 mb-4" type="submit" pButton label="Login"></button>
+  </form>
+  <div *ngIf="isLoggedIn$ | async">User is logged in!</div>
+</p-card>
+</div>

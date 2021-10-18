@@ -3,26 +3,11 @@ import { UserService } from '@ng-mfe/shared/data-access-user';
 
 @Component({
   selector: 'ng-mfe-login-entry',
-  template: `
-    <div class="login-app">
-      <form class="login-form" (ngSubmit)="login()">
-        <label>
-          Username:
-          <input type="text" name="username" [(ngModel)]="username" />
-        </label>
-        <label>
-          Password:
-          <input type="password" name="password" [(ngModel)]="password" />
-        </label>
-        <button type="submit">Login</button>
-      </form>
-      <div *ngIf="isLoggedIn$ | async">User is logged in!</div>
-    </div>
-  `,
+  templateUrl: './entry.component.html',
   styles: [
     `
       .login-app {
-        width: 30vw;
+        width: 40vw;
         border: 2px dashed black;
         padding: 8px;
         margin: 0 auto;
