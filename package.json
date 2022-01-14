@@ -48,6 +48,7 @@
     "@angular/platform-browser": "^12.2.0",
     "@angular/platform-browser-dynamic": "^12.2.0",
     "@angular/router": "^12.2.0",
+    "@nrwl/nx-cloud": "^13.0.2",
     "primeflex": "^3.1.0",
     "primeicons": "^4.1.0",
     "primeng": "^12.2.1",
