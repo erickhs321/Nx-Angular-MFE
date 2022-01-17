@@ -1,7 +1,6 @@
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 const mf = require('@angular-architects/module-federation/webpack');
 const path = require('path');
-import { environment } from './environments/environment';
 
 /**
  * We use the NX_TSCONFIG_PATH environment variable when using the @nrwl/angular:webpack-browser
