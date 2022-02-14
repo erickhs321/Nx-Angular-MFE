@@ -40,7 +40,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        login: 'login@https://hardcore-poitras-f94c02.netlify.app/remoteEntry.js',
+        login: 'https://hardcore-poitras-f94c02.netlify.app/remoteEntry.js',
       },
       shared: {
         '@angular/core': { singleton: true, strictVersion: true },
