@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { DiretivaDirective } from './diretiva.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DiretivaDirective],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
